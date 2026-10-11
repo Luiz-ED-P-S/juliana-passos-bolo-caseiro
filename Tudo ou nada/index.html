@@ -1,0 +1,1686 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juliana Passos Bolo Caseiro | Confeitaria Artesanal em Santíssimo - RJ</title>
+  
+  <!-- SEO & Metatags -->
+  <meta name="description" content="Bolos caseiros que derretem o coração. Feitos à mão com ingredientes selecionados em Santíssimo, Rio de Janeiro. Peça pelo iFood ou WhatsApp (21) 97255-8199.">
+  <meta name="keywords" content="bolo caseiro, confeitaria artesanal, bolo vulcão, bolo de ninho com morango, Santíssimo, Rio de Janeiro, bolo de chocolate, iFood">
+  <meta property="og:title" content="Juliana Passos Bolo Caseiro | Bolos que derretem o coração">
+  <meta property="og:description" content="Bolos artesanais vulcão, ninho com morangos e muito amor direto de Santíssimo para você. Peça já!">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=1200&q=80">
+  <meta name="theme-color" content="#6c162a">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧁</text></svg>">
+
+  <!-- Google Fonts: Parisienne (Elegância Artesanal), Great Vibes (Caligrafia Fluida), Playfair Display e Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Parisienne&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Three.js (Motor 3D para o bolo interativo) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Folha de Estilos Customizada -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Chuva Global de Pétalas e Corações Violeta Glow (Por toda a página) -->
+  <div class="global-particles-overlay" id="particles-container" aria-hidden="true"></div>
+
+  <!-- ========================================================================
+       1. CABEÇALHO (HEADER)
+       ======================================================================== -->
+  <header class="header">
+    <div class="container header-container">
+      <!-- Logo à Esquerda -->
+      <a href="#" class="brand-logo" aria-label="Juliana Passos Bolo Caseiro - Início">
+        <div class="logo-icon-wrapper">
+          <i class="fa-solid fa-cake-candles"></i>
+        </div>
+        <div class="brand-text-block">
+          <span class="brand-title">Juliana Passos</span>
+          <span class="brand-subtitle">Bolo Caseiro</span>
+        </div>
+      </a>
+
+      <!-- Menu Centralizado -->
+      <nav aria-label="Navegação Principal">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#cardapio" class="nav-link">Bolos</a></li>
+          <li><a href="#avaliacoes" class="nav-link">Avaliações</a></li>
+          <li><a href="#instagram" class="nav-link">Instagram</a></li>
+          <li><a href="#localizacao" class="nav-link">Onde estamos</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botões Destaque à Direita (iFood + WhatsApp) & Mobile Toggle -->
+      <div class="header-actions">
+        <a href="https://www.ifood.com.br/delivery/rio-de-janeiro-rj/juliana-passos-bolo-caseiro-santissimo/9c33698d-069c-4eba-8e46-34d284d932b2" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn-header-ifood"
+           title="Pedir no iFood">
+          <i class="fa-solid fa-utensils"></i>
+          <span>Pedir no iFood</span>
+        </a>
+
+        <a href="https://wa.me/5521972558199?text=Ol%C3%A1%2C%20Juliana!%20Vim%20pelo%20site%20e%20gostaria%20de%20fazer%20um%20pedido%20de%20bolo%20caseiro." 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn-header-whatsapp"
+           title="Falar no WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>Fale no WhatsApp</span>
+        </a>
+
+        <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Abrir Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         2. SEÇÃO PRINCIPAL (HERO SECTION)
+         ====================================================================== -->
+    <section class="hero" id="inicio">
+      <div class="hero-blob blob-1"></div>
+      <div class="hero-blob blob-2"></div>
+      <div class="hero-blob blob-purple"></div>
+
+
+      <div class="container hero-content-grid">
+        <!-- Coluna de Texto e CTAs -->
+        <div class="hero-text-col">
+          <div class="hero-badge">
+            <i class="fa-solid fa-heart"></i>
+            <span>Confeitaria Artesanal Afetiva em Santíssimo</span>
+          </div>
+
+          <h1 class="hero-title">
+            Bolos caseiros que <span class="highlight-wine">derretem o coração</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Feitos à mão, com ingredientes selecionados e muito carinho. Peça o seu bolo de ninho, chocolate ou vulcão e receba fresquinho, direto de Santíssimo para sua casa.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="https://www.ifood.com.br/delivery/rio-de-janeiro-rj/juliana-passos-bolo-caseiro-santissimo/9c33698d-069c-4eba-8e46-34d284d932b2" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn-cta-ifood">
+              <i class="fa-solid fa-motorcycle"></i>
+              <span>Peça já pelo iFood</span>
+            </a>
+
+            <a href="https://wa.me/5521972558199?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20de%20bolo%20caseiro%20fresquinho." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn-cta-whatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>Peça pelo WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Coluna Visual com o Bolo Interativo 3D -->
+        <div class="hero-visual-card">
+          <div class="cake-3d-wrapper" id="hero-cake-canvas-container">
+            <!-- Indicador sutil 3D -->
+            <div class="hint-3d-pill">
+              <i class="fa-solid fa-arrows-rotate"></i>
+              <span>Toque e arraste o bolo ao lado para ver em 3D</span>
+            </div>
+          </div>
+
+          <!-- Seletor de Sabores para Visualização no 3D -->
+          <div class="cake-flavor-selector">
+            <button class="flavor-btn active" data-flavor="ninho">
+              <span class="flavor-dot ninho"></span>
+              <span>Ninho com Morango</span>
+            </button>
+            <button class="flavor-btn" data-flavor="chocolate">
+              <span class="flavor-dot chocolate"></span>
+              <span>Vulcão de Chocolate</span>
+            </button>
+            <button class="flavor-btn" data-flavor="morango">
+              <span class="flavor-dot morango"></span>
+              <span>Cenoura c/ Brigadeiro</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Barra de Estatísticas e Diferenciais -->
+      <div class="container stats-bar-section">
+        <div class="stats-card-container">
+          <!-- Estatística 1: Google Rating -->
+          <div class="stat-item">
+            <div class="stat-icon-wrap">
+              <i class="fa-brands fa-google"></i>
+            </div>
+            <div class="stat-data">
+              <div class="stat-number-row">
+                <span class="stat-number">4.6</span>
+                <span class="stat-stars">★★★★★</span>
+              </div>
+              <span class="stat-label">Avaliação Google</span>
+              <span class="stat-sublabel">Com 39+ avaliações verificadas</span>
+            </div>
+          </div>
+
+          <!-- Estatística 2: Bolos Entregues -->
+          <div class="stat-item">
+            <div class="stat-icon-wrap">
+              <i class="fa-solid fa-gift"></i>
+            </div>
+            <div class="stat-data">
+              <div class="stat-number-row">
+                <span class="stat-number">1000+</span>
+              </div>
+              <span class="stat-label">Bolos entregues</span>
+              <span class="stat-sublabel">Espalhando doçura no RJ</span>
+            </div>
+          </div>
+
+          <!-- Estatística 3: Artesanal -->
+          <div class="stat-item">
+            <div class="stat-icon-wrap">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+            </div>
+            <div class="stat-data">
+              <div class="stat-number-row">
+                <span class="stat-number">100%</span>
+              </div>
+              <span class="stat-label">Feito à mão</span>
+              <span class="stat-sublabel">Ingredientes nobres e carinho</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. SEÇÃO DE CARDÁPIO ("Nosso Cardápio - Sabores que viciam")
+         ====================================================================== -->
+    <section class="section-padding menu-section" id="cardapio">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Doçura sem igual</span>
+          <h2 class="section-title">Nosso Cardápio - Sabores que viciam</h2>
+          <p class="section-desc">
+            Cada bolo é preparado artesanalmente, com receitas de família e ingredientes de primeira qualidade. <strong>Toque nos cards para girar em 3D.</strong>
+          </p>
+        </div>
+
+        <!-- Filtros Rápidos -->
+        <div class="menu-filter-bar">
+          <button class="menu-filter-btn active" data-filter="all">Todos os Sabores</button>
+          <button class="menu-filter-btn" data-filter="vulcao">Linha Vulcão</button>
+          <button class="menu-filter-btn" data-filter="ninho">Ninho & Morango</button>
+          <button class="menu-filter-btn" data-filter="chocolatudos">Chocolatudos</button>
+          <button class="menu-filter-btn" data-filter="tradicionais">Tradicionais Afetivos</button>
+        </div>
+
+        <!-- Grade de Produtos com Cartões 3D Flip -->
+        <div class="menu-cards-grid">
+          
+          <!-- Card 1: Bolo Vulcão de Ninho com Morangos -->
+          <div class="cake-flip-card" data-category="ninho">
+            <div class="cake-flip-card-inner">
+              <!-- Frente -->
+              <div class="cake-card-front">
+                <div class="cake-image-box">
+                  <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80" 
+                       alt="Bolo Vulcão de Ninho com Morango" loading="lazy">
+                  <span class="cake-badge-tag highlight">Mais Pedido ★</span>
+                  <button class="btn-flip-hint" title="Girar card e ver Ficha Técnica" aria-label="Girar card em 3D para ver especificações">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    <span class="btn-flip-pill-text">Ver Ficha</span>
+                  </button>
+                </div>
+                <div class="cake-card-body">
+                  <div class="cake-meta-row">
+                    <span class="cake-portion-tag"><i class="fa-regular fa-clock"></i> Fresquinho hoje</span>
+                    <span class="cake-portion-tag"><i class="fa-solid fa-users"></i> Serve até 12 fatias</span>
+                  </div>
+                  <h3 class="cake-card-title">Bolo Vulcão de Ninho com Morango</h3>
+                  <p class="cake-card-desc">
+                    Massa aveludada amanteigada, transbordando uma erupção de brigadeiro cremoso de Leite Ninho e morangos frescos selecionados.
+                  </p>
+                  <div class="cake-card-footer">
+                    <div class="cake-price-wrap">
+                      <span class="cake-price-label">A partir de</span>
+                      <span class="cake-price-val">R$ 55,00</span>
+                    </div>
+                    <div class="card-action-btns">
+                      <a href="https://www.ifood.com.br/delivery/rio-de-janeiro-rj/juliana-passos-bolo-caseiro-santissimo/9c33698d-069c-4eba-8e46-34d284d932b2" 
+                         target="_blank" class="btn-card-ifood" title="Pedir no iFood">
+                        <i class="fa-solid fa-utensils"></i>
+                      </a>
+                      <a href="https://wa.me/5521972558199?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20o%20*Bolo%20Vulc%C3%A3o%20de%20Ninho%20com%20Morango*." 
+                         target="_blank" class="btn-card-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Pedir</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Verso 3D (Ficha Técnica & Informações +) -->
+              <div class="cake-card-back">
+                <div class="back-header">
+                  <div class="back-header-title">
+                    <span class="back-badge">Ficha Técnica</span>
+                    <h4>Vulcão de Ninho com Morango</h4>
+                  </div>
+                  <button class="btn-unflip" aria-label="Voltar para foto" title="Voltar à foto">
+                    <i class="fa-solid fa-arrow-rotate-left"></i>
+                  </button>
+                </div>
+
+                <!-- Especificações Técnicas -->
+                <div class="back-specs-grid">
+                  <div class="spec-cell">
+                    <i class="fa-solid fa-ruler-combined"></i>
+                    <div>
+                      <span class="spec-label">Forma</span>
+                      <span class="spec-val">Aro 20cm</span>
+                    </div>
+                  </div>
+                  <div class="spec-cell">
+                    <i class="fa-solid fa-weight-scale"></i>
+                    <div>
+                      <span class="spec-label">Peso Médio</span>
+                      <span class="spec-val">~1,4 kg</span>
+                    </div>
+                  </div>
+                  <div class="spec-cell">
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <div>
+                      <span class="spec-label">Rendimento</span>
+                      <span class="spec-val">10 a 12 fatias</span>
+                    </div>
+                  </div>
+                  <div class="spec-cell">
+                    <i class="fa-solid fa-snowflake"></i>
+                    <div>
+                      <span class="spec-label">Validade</span>
+                      <span class="spec-val">3 a 5 dias</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="back-content-list">
+                  <div class="back-detail-item">
+                    <i class="fa-solid fa-sparkles"></i>
+                    <span><strong>Massa:</strong> Pão de ló amanteigado com fava de baunilha, textura fofa e úmida.</span>
+                  </div>
+                  <div class="back-detail-item">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span><strong>Erupção:</strong> Brigadeiro de Leite Ninho legítimo Nestlé no ponto perfeito de cascata.</span>
+                  </div>
+                  <div class="back-detail-item">
+                    <i class="fa-solid fa-heart"></i>
+                    <span><strong>Fruta Fresca:</strong> Morangos higienizados no centro e coroa superior decorada.</span>
+                  </div>
+                  <div class="back-secret-note">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <span><strong>Dica da Ju:</strong> Ao cortar a primeira fatia, a calda transborda no prato envolvendo toda a massa!</span>
+                  </div>
+                </div>
+
+                <div class="back-order-actions">
+                  <a href="https://wa.me/5521972558199?text=Ol%C3%A1!%20Quero%20encomendar%20o%20Bolo%20Vulc%C3%A3o%20de%20Ninho%20com%20Morango!" target="_blank" class="btn-back-order-wa">
+                    <i class="fa-brands fa-whatsapp"></i> Peça pelo WhatsApp
+                  </a>
+                  <a href="https://www.ifood.com.br/delivery/rio-de-janeiro-rj/juliana-passos-bolo-caseiro-santissimo/9c33698d-069c-4eba-8e46-34d284d932b2" target="_blank" class="btn-back-order-ifood">
+                    <i class="fa-solid fa-utensils"></i> Peça no iFood
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Bolo Vulcão de Chocolate Belga -->
+          <div class="cake-flip-card" data-category="chocolatudos">
+            <div class="cake-flip-card-inner">
+              <!-- Frente -->
+              <div class="cake-card-front">
+                <div class="cake-image-box">
+                  <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80" 
+                       alt="Bolo Vulcão de Chocolate Belga" loading="lazy">
+                  <span class="cake-badge-tag">Chocolatudo</span>
+                  <button class="btn-flip-hint" title="Girar card e ver Ficha Técnica" aria-label="Girar card em 3D para ver especificações">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    <span class="btn-flip-pill-text">Ver Ficha</span>
+                  </button>
+                </div>
+                <div class="cake-card-body">
+                  <div class="cake-meta-row">
+                    <span class="cake-portion-tag"><i class="fa-solid fa-fire-burner"></i> Calda quente</span>
+                    <span class="cake-portion-tag"><i class="fa-solid fa-users"></i> Serve até 12 fatias</span>
+                  </div>
+                  <h3 class="cake-card-title">Bolo Vulcão de Chocolate Belga</h3>
+                  <p class="cake-card-desc">
+                    Massa fofinha de cacau 100%, recheada até o topo com cascata cremosa de brigadeiro gourmet e granulados crocantes.
+                  </p>
+                  <div class="cake-card-footer">
+                    <div class="cake-price-wrap">
+                      <span class="cake-price-label">A partir de</span>
+                      <span class="cake-price-val">R$ 52,00</span>
+                    </div>
+                    <div class="card-action-btns">
+                      <a href="https://www.ifood.com.br/delivery/rio-de-janeiro-rj/juliana-passos-bolo-caseiro-santissimo/9c33698d-069c-4eba-8e46-34d284d932b2" 
+                         target="_blank" class="btn-card-ifood" title="Pedir no iFood">
+                        <i class="fa-solid fa-utensils"></i>
+                      </a>
+                      <a href="https://wa.me/5521972558199?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20o%20*Bolo%20Vulc%C3%A3o%20de%20Chocolate%20Belga*." 
+                         target="_blank" class="btn-card-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Pedir</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Verso 3D (Ficha Técnica & Informações +) -->
+              <div class="cake-card-back">
+                <div class="back-header">
+                  <div class="back-header-title">
+                    <span class="back-badge">Ficha Técnica</span>
+                    <h4>Vulcão de Chocolate Belga</h4>
+                  </div>
+                  <button class="btn-unflip" aria-label="Voltar para foto" title="Voltar à foto">
+                    <i class="fa-solid fa-arrow-rotate-left"></i>
+                  </button>
+                </div>
+
+                <!-- Especificações Técnicas -->
+                <div class="back-specs-grid">
+                  <div class="spec-cell">
+                    <i class="fa-solid fa-ruler-combined"></i>
+                    <div>
+                      <span class="spec-label">Forma</span>
+                      <span class="spec-val">Aro 20cm</span>
+                    </div>
+                  </div>
+                  <div class="spec-cell">
+                    <i class="fa-solid fa-weight-scale"></i>
+                    <div>
+                      <span class="spec-label">Peso Médio</span>
+                      <span class="spec-val">~1,4 kg</span>
+                    </div>
+                  </div>
+                  <div class="spec-cell">
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <div>
+                      <span class="spec-label">Rendimento</span>
+                      <span class="spec-val">10 a 12 fatias</span>
+                    </div>
+                  </div>
+                  <div class="spec-cell">
+                    <i class="fa-solid fa-snowflake"></i>
+                    <div>
+                      <span class="spec-label">Validade</span>
+                      <span class="spec-val">3 a 5 dias</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="back-content-list">
+                  <div class="back-detail-item">
+                    <i class="fa-solid fa-sparkles"></i>
+                    <span><strong>Massa:</strong> Puro cacau 100% nobre alcalino, sem excesso de açúcar, ultra úmida.</span>
+                  </div>
+                  <div class="back-detail-item">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span><strong>Cascata:</strong> Brigadeiro gourmet feito na panela de cobre com manteiga pura.</span>
+                  </div>
+                  <div class="back-detail-item">
+                    <i class="fa-solid fa-cookie"></i>
+                    <span><strong>Granulado:</strong> Splits de chocolate nobre que derretem na temperatura da boca.</span>
+                  </div>
+                  <div class="back-secret-note">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    <span><strong>Dica da Ju:</strong> Aqueça por 15 a 20 segundos no micro-ondas para uma calda ainda mais fluida e quente!</span>
+                  </div>
+                </div>
+
+                <div class="back-order-actions">
+                  <a href="https://wa.me/5521972558199?text=Ol%C3%A1!%20Quero%20encomendar%20o%20Bolo%20Vulc%C3%A3o%20de%20Chocolate%20Belga!" target="_blank" class="btn-back-order-wa">
+                    <i class="fa-brands fa-whatsapp"></i> Peça pelo WhatsApp
+                  </a>
+                  <a href="https://www.ifood.com.br/delivery/rio-de-janeiro-rj/juliana-passos-bolo-caseiro-santissimo/9c33698d-069c-4eba-8e46-34d284d932b2" target="_blank" class="btn-back-order-ifood">
+                    <i class="fa-solid fa-utensils"></i> Peça no iFood
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Bolo de Cenoura com Brigadeiro Vulcão -->
+          <div class="cake-flip-card" data-category="vulcao">
+            <div class="cake-flip-card-inner">
+              <!-- Frente -->
+              <div class="cake-card-front">
+                <div class="cake-image-box">
+                  <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=800&q=80" 
+                       alt="Bolo de Cenoura com Brigadeiro Vulcão" loading="lazy">
+                  <span class="cake-badge-tag highlight">Clássico do Coração</span>
+                  <button class="btn-flip-hint" title="Girar card e ver Ficha Técnica" aria-label="Girar card em 3D para ver especificações">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    <span class="btn-flip-pill-text">Ver Ficha</span>
+                  </button>
+                </div>
+                <div class="cake-card-body">
+                  <div class="cake-meta-row">
+                    <span class="cake-portion-tag"><i class="fa-solid fa-carrot"></i> Cenouras frescas</span>
+                    <span class="cake-portion-tag"><i class="fa-solid fa-users"></i> Serve até 12 fatias</span>
+                  </div>
+                  <h3 class="cake-card-title">Cenoura com Brigadeiro Vulcão</h3>
+                  <p class="cake-card-desc">
+                    A receita tradicional da infância elevada à perfeição: massa fofíssima cor de sol com uma piscina de brigadeiro caseiro.
+                  </p>
+                  <div class="cake-card-footer">
+                    <div class="cake-price-wrap">
+                      <span class="cake-price-label">A partir de</span>
+                      <span class="cake-price-val">R$ 48,00</span>
+                    </div>
+                    <div class="card-action-btns">
+                      <a href="https://www.ifood.com.br/delivery/rio-de-janeiro-rj/juliana-passos-bolo-caseiro-santissimo/9c33698d-069c-4eba-8e46-34d284d932b2" 
+                         target="_blank" class="btn-card-ifood" title="Pedir no iFood">
+                        <i class="fa-solid fa-utensils"></i>
+                      </a>
+                      <a href="https://wa.me/5521972558199?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20o%20*Bolo%20de%20Cenoura%20com%20Brigadeiro%20Vulc%C3%A3o*." 
+                         target="_blank" class="btn-card-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Pedir</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Verso 3D (Ficha Técnica & Informações +) -->
+              <div class="cake-card-back">
+                <div class="back-header">
+                  <div class="back-header-title">
+                    <span class="back-badge">Ficha Técnica</span>
+                    <h4>Cenoura com Brigadeiro Vulcão</h4>
+                  </div>
+                  <button class="btn-unflip" aria-label="Voltar para foto" title="Voltar à foto">
+                    <i class="fa-solid fa-arrow-rotate-left"></i>
+                  </button>
+                </div>
+
+                <!-- Especificações Técnicas -->
+                <div class="back-specs-grid">
+                  <div class="spec-cell">
+                    <i class="fa-solid fa-ruler-combined"></i>
+                    <div>
+                      <span class="spec-label">Forma</span>
+                      <span class="spec-val">Aro 20cm</span>
+                    </div>
+                  </div>
+                  <div class="spec-cell">
+                    <i class="fa-solid fa-weight-scale"></i>
+                    <div>
+                      <span class="spec-label">Peso Médio</span>
+                      <span class="spec-val">~1,35 kg</span>
+                    </div>
+                  </div>
+                  <div class="spec-cell">
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <div>
+                      <span class="spec-label">Rendimento</span>
+                      <span class="spec-val">10 a 12 fatias</span>
+                    </div>
+                  </div>
+                  <div class="spec-cell">
+                    <i class="fa-solid fa-snowflake"></i>
+                    <div>
+                      <span class="spec-label">Validade</span>
+                      <span class="spec-val">3 a 5 dias</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="back-content-list">
+                  <div class="back-detail-item">
+                    <i class="fa-solid fa-sparkles"></i>
+                    <span><strong>Massa:</strong> Cenouras in natura frescas, batidas na proporção perfeita para jamais solar.</span>
+                  </div>
+                  <div class="back-detail-item">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span><strong>Piscina:</strong> Brigadeiro caseiro brilhante de panela, que escorre abundante ao servir.</span>
+                  </div>
+                  <div class="back-detail-item">
+                    <i class="fa-solid fa-medal"></i>
+                    <span><strong>Artesanal:</strong> 100% caseiro, assado diariamente, sem aromatizantes artificiais.</span>
+                  </div>
+                  <div class="back-secret-note">
+                    <i class="fa-solid fa-mug-saucer"></i>
+                    <span><strong>Dica da Ju:</strong> O par perfeito com um café passado quentinho no lanche da tarde em família!</span>
+                  </div>
+                </div>
+
+                <div class="back-order-actions">
+                  <a href="https://wa.me/5521972558199?text=Ol%C3%A1!%20Quero%20encomendar%20o%20Bolo%20de%20Cenoura%20com%20Brigadeiro%20Vulc%C3%A3o!" target="_blank" class="btn-back-order-wa">
+                    <i class="fa-brands fa-whatsapp"></i> Peça pelo WhatsApp
+                  </a>
+                  <a href="https://www.ifood.com.br/delivery/rio-de-janeiro-rj/juliana-passos-bolo-caseiro-santissimo/9c33698d-069c-4eba-8e46-34d284d932b2" target="_blank" class="btn-back-order-ifood">
+                    <i class="fa-solid fa-utensils"></i> Peça no iFood
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Bolo de Churros com Doce de Leite Cremoso -->
+          <div class="cake-flip-card" data-category="tradicionais">
+            <div class="cake-flip-card-inner">
+              <!-- Frente -->
+              <div class="cake-card-front">
+                <div class="cake-image-box">
+                  <img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?auto=format&fit=crop&w=800&q=80" 
+                       alt="Bolo de Churros com Doce de Leite" loading="lazy">
+                  <span class="cake-badge-tag">Queridinho</span>
+                  <button class="btn-flip-hint" title="Girar card e ver Ficha Técnica" aria-label="Girar card em 3D para ver especificações">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    <span class="btn-flip-pill-text">Ver Ficha</span>
+                  </button>
+                </div>
+                <div class="cake-card-body">
+                  <div class="cake-meta-row">
+                    <span class="cake-portion-tag"><i class="fa-solid fa-pepper-hot"></i> Toque de canela</span>
+                    <span class="cake-portion-tag"><i class="fa-solid fa-users"></i> Serve até 12 fatias</span>
+                  </div>
+                  <h3 class="cake-card-title">Bolo de Churros com Doce de Leite</h3>
+                  <p class="cake-card-desc">
+                    Massa perfumada com canela e açúcar mascavo, coberta com farta camada de doce de leite artesanal cremoso e bicos decorados.
+                  </p>
+                  <div class="cake-card-footer">
+                    <div class="cake-price-wrap">
+                      <span class="cake-price-label">A partir de</span>
+                      <span class="cake-price-val">R$ 50,00</span>
+                    </div>
+                    <div class="card-action-btns">
+                      <a href="https://www.ifood.com.br/delivery/rio-de-janeiro-rj/juliana-passos-bolo-caseiro-santissimo/9c33698d-069c-4eba-8e46-34d284d932b2" 
+                         target="_blank" class="btn-card-ifood" title="Pedir no iFood">
+                        <i class="fa-solid fa-utensils"></i>
+                      </a>
+                      <a href="https://wa.me/5521972558199?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20o%20*Bolo%20de%20Churros%20com%20Doce%20de%20Leite*." 
+                         target="_blank" class="btn-card-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Pedir</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Verso 3D (Ficha Técnica & Informações +) -->
+              <div class="cake-card-back">
+                <div class="back-header">
+                  <div class="back-header-title">
+                    <span class="back-badge">Ficha Técnica</span>
+                    <h4>Bolo de Churros com Doce de Leite</h4>
+                  </div>
+                  <button class="btn-unflip" aria-label="Voltar para foto" title="Voltar à foto">
+                    <i class="fa-solid fa-arrow-rotate-left"></i>
+                  </button>
+                </div>
+
+                <!-- Especificações Técnicas -->
+                <div class="back-specs-grid">
+                  <div class="spec-cell">
+                    <i class="fa-solid fa-ruler-combined"></i>
+                    <div>
+                      <span class="spec-label">Forma</span>
+                      <span class="spec-val">Aro 20cm</span>
+                    </div>
+                  </div>
+                  <div class="spec-cell">
+                    <i class="fa-solid fa-weight-scale"></i>
+                    <div>
+                      <span class="spec-label">Peso Médio</span>
+                      <span class="spec-val">~1,3 kg</span>
+                    </div>
+                  </div>
+                  <div class="spec-cell">
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <div>
+                      <span class="spec-label">Rendimento</span>
+                      <span class="spec-val">10 a 12 fatias</span>
+                    </div>
+                  </div>
+                  <div class="spec-cell">
+                    <i class="fa-solid fa-snowflake"></i>
+                    <div>
+                      <span class="spec-label">Validade</span>
+                      <span class="spec-val">4 a 6 dias</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="back-content-list">
+                  <div class="back-detail-item">
+                    <i class="fa-solid fa-sparkles"></i>
+                    <span><strong>Massa:</strong> Toque sutil de canela do Ceilão e açúcar mascavo especial.</span>
+                  </div>
+                  <div class="back-detail-item">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span><strong>Cobertura:</strong> Autêntico doce de leite cozido com textura cremosa de colher.</span>
+                  </div>
+                  <div class="back-detail-item">
+                    <i class="fa-solid fa-star"></i>
+                    <span><strong>Finalização:</strong> Polvilhado com açúcar cristal e canela perfumada.</span>
+                  </div>
+                  <div class="back-secret-note">
+                    <i class="fa-solid fa-heart"></i>
+                    <span><strong>Dica da Ju:</strong> A crocância delicada do açúcar com a maciez da massa é pura nostalgia!</span>
+                  </div>
+                </div>
+
+                <div class="back-order-actions">
+                  <a href="https://wa.me/5521972558199?text=Ol%C3%A1!%20Quero%20encomendar%20o%20Bolo%20de%20Churros%20com%20Doce%20de%20Leite!" target="_blank" class="btn-back-order-wa">
+                    <i class="fa-brands fa-whatsapp"></i> Peça pelo WhatsApp
+                  </a>
+                  <a href="https://www.ifood.com.br/delivery/rio-de-janeiro-rj/juliana-passos-bolo-caseiro-santissimo/9c33698d-069c-4eba-8e46-34d284d932b2" target="_blank" class="btn-back-order-ifood">
+                    <i class="fa-solid fa-utensils"></i> Peça no iFood
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Bolo Red Velvet com Frutas Vermelhas -->
+          <div class="cake-flip-card" data-category="tradicionais">
+            <div class="cake-flip-card-inner">
+              <!-- Frente -->
+              <div class="cake-card-front">
+                <div class="cake-image-box">
+                  <img src="https://images.unsplash.com/photo-1616541823729-00fe0aacd32c?auto=format&fit=crop&w=800&q=80" 
+                       alt="Bolo Red Velvet com Frutas Vermelhas" loading="lazy">
+                  <span class="cake-badge-tag highlight">Especialidade</span>
+                  <button class="btn-flip-hint" title="Girar card e ver Ficha Técnica" aria-label="Girar card em 3D para ver especificações">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    <span class="btn-flip-pill-text">Ver Ficha</span>
+                  </button>
+                </div>
+                <div class="cake-card-body">
+                  <div class="cake-meta-row">
+                    <span class="cake-portion-tag"><i class="fa-solid fa-gem"></i> Linha Nobre</span>
+                    <span class="cake-portion-tag"><i class="fa-solid fa-users"></i> Serve até 12 fatias</span>
+                  </div>
+                  <h3 class="cake-card-title">Red Velvet com Cream Cheese</h3>
+                  <p class="cake-card-desc">
+                    Massa aveludada vermelha rubi, recheada com frosting cremoso de cream cheese e geleia artesanal de frutas vermelhas.
+                  </p>
+                  <div class="cake-card-footer">
+                    <div class="cake-price-wrap">
+                      <span class="cake-price-label">A partir de</span>
+                      <span class="cake-price-val">R$ 68,00</span>
+                    </div>
+                    <div class="card-action-btns">
+                      <a href="https://www.ifood.com.br/delivery/rio-de-janeiro-rj/juliana-passos-bolo-caseiro-santissimo/9c33698d-069c-4eba-8e46-34d284d932b2" 
+                         target="_blank" class="btn-card-ifood" title="Pedir no iFood">
+                        <i class="fa-solid fa-utensils"></i>
+                      </a>
+                      <a href="https://wa.me/5521972558199?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20o%20*Bolo%20Red%20Velvet*." 
+                         target="_blank" class="btn-card-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Pedir</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Verso 3D (Ficha Técnica & Informações +) -->
+              <div class="cake-card-back">
+                <div class="back-header">
+                  <div class="back-header-title">
+                    <span class="back-badge">Ficha Técnica</span>
+                    <h4>Red Velvet com Cream Cheese</h4>
+                  </div>
+                  <button class="btn-unflip" aria-label="Voltar para foto" title="Voltar à foto">
+                    <i class="fa-solid fa-arrow-rotate-left"></i>
+                  </button>
+                </div>
+
+                <!-- Especificações Técnicas -->
+                <div class="back-specs-grid">
+                  <div class="spec-cell">
+                    <i class="fa-solid fa-ruler-combined"></i>
+                    <div>
+                      <span class="spec-label">Forma</span>
+                      <span class="spec-val">Aro 20cm</span>
+                    </div>
+                  </div>
+                  <div class="spec-cell">
+                    <i class="fa-solid fa-weight-scale"></i>
+                    <div>
+                      <span class="spec-label">Peso Médio</span>
+                      <span class="spec-val">~1,5 kg</span>
+                    </div>
+                  </div>
+                  <div class="spec-cell">
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <div>
+                      <span class="spec-label">Rendimento</span>
+                      <span class="spec-val">12 fatias</span>
+                    </div>
+                  </div>
+                  <div class="spec-cell">
+                    <i class="fa-solid fa-snowflake"></i>
+                    <div>
+                      <span class="spec-label">Conservação</span>
+                      <span class="spec-val">Geladeira (5 dias)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="back-content-list">
+                  <div class="back-detail-item">
+                    <i class="fa-solid fa-sparkles"></i>
+                    <span><strong>Massa:</strong> Toque de buttermilk natural e cacau, cor rubi intensa aveludada.</span>
+                  </div>
+                  <div class="back-detail-item">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span><strong>Frosting:</strong> Cream cheese autêntico batido com fava de baunilha pura.</span>
+                  </div>
+                  <div class="back-detail-item">
+                    <i class="fa-solid fa-bowl-rice"></i>
+                    <span><strong>Geleia Artesanal:</strong> Framboesas, amoras e morangos reduzidos lentamente em fogo baixo.</span>
+                  </div>
+                  <div class="back-secret-note">
+                    <i class="fa-solid fa-crown"></i>
+                    <span><strong>Dica da Ju:</strong> Sirva refrigerado para destacar a cremosidade do cream cheese e o frescor das frutas!</span>
+                  </div>
+                </div>
+
+                <div class="back-order-actions">
+                  <a href="https://wa.me/5521972558199?text=Ol%C3%A1!%20Quero%20encomendar%20o%20Bolo%20Red%20Velvet!" target="_blank" class="btn-back-order-wa">
+                    <i class="fa-brands fa-whatsapp"></i> Peça pelo WhatsApp
+                  </a>
+                  <a href="https://www.ifood.com.br/delivery/rio-de-janeiro-rj/juliana-passos-bolo-caseiro-santissimo/9c33698d-069c-4eba-8e46-34d284d932b2" target="_blank" class="btn-back-order-ifood">
+                    <i class="fa-solid fa-utensils"></i> Peça no iFood
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6: Bolo de Fubá Cremoso com Goiabada Cascão -->
+          <div class="cake-flip-card" data-category="tradicionais">
+            <div class="cake-flip-card-inner">
+              <!-- Frente -->
+              <div class="cake-card-front">
+                <div class="cake-image-box">
+                  <img src="img/fatia_fuba_goiabada.jpg" alt="Fatia de bolo de fubá cremoso com cobertura de goiabada cascão" class="menu-img" loading="lazy">
+                  <span class="cake-badge-tag">Receita da Vovó</span>
+                  <button class="btn-flip-hint" title="Girar card e ver Ficha Técnica" aria-label="Girar card em 3D para ver especificações">
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    <span class="btn-flip-pill-text">Ver Ficha</span>
+                  </button>
+                </div>
+                <div class="cake-card-body">
+                  <div class="cake-meta-row">
+                    <span class="cake-portion-tag"><i class="fa-solid fa-cheese"></i> Queijo da canastra</span>
+                    <span class="cake-portion-tag"><i class="fa-solid fa-users"></i> Serve até 12 fatias</span>
+                  </div>
+                  <h3 class="cake-card-title">Fubá Cremoso com Goiabada</h3>
+                  <p class="cake-card-desc">
+                    Textura única que forma uma camada cremosa no meio da massa, coberto com calda quente de goiabada cascão mineira.
+                  </p>
+                  <div class="cake-card-footer">
+                    <div class="cake-price-wrap">
+                      <span class="cake-price-label">A partir de</span>
+                      <span class="cake-price-val">R$ 42,00</span>
+                    </div>
+                    <div class="card-action-btns">
+                      <a href="https://www.ifood.com.br/delivery/rio-de-janeiro-rj/juliana-passos-bolo-caseiro-santissimo/9c33698d-069c-4eba-8e46-34d284d932b2" 
+                         target="_blank" class="btn-card-ifood" title="Pedir no iFood">
+                        <i class="fa-solid fa-utensils"></i>
+                      </a>
+                      <a href="https://wa.me/5521972558199?text=Ol%C3%A1!%20Gostaria%20de%20pedir%20o%20*Bolo%20de%20Fub%C3%A1%20Cremoso%20com%20Goiabada*." 
+                         target="_blank" class="btn-card-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <span>Pedir</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Verso 3D (Ficha Técnica & Informações +) -->
+              <div class="cake-card-back">
+                <div class="back-header">
+                  <div class="back-header-title">
+                    <span class="back-badge">Ficha Técnica</span>
+                    <h4>Fubá Cremoso com Goiabada</h4>
+                  </div>
+                  <button class="btn-unflip" aria-label="Voltar para foto" title="Voltar à foto">
+                    <i class="fa-solid fa-arrow-rotate-left"></i>
+                  </button>
+                </div>
+
+                <!-- Especificações Técnicas -->
+                <div class="back-specs-grid">
+                  <div class="spec-cell">
+                    <i class="fa-solid fa-ruler-combined"></i>
+                    <div>
+                      <span class="spec-label">Forma</span>
+                      <span class="spec-val">Aro 20cm</span>
+                    </div>
+                  </div>
+                  <div class="spec-cell">
+                    <i class="fa-solid fa-weight-scale"></i>
+                    <div>
+                      <span class="spec-label">Peso Médio</span>
+                      <span class="spec-val">~1,3 kg</span>
+                    </div>
+                  </div>
+                  <div class="spec-cell">
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <div>
+                      <span class="spec-label">Rendimento</span>
+                      <span class="spec-val">10 a 12 fatias</span>
+                    </div>
+                  </div>
+                  <div class="spec-cell">
+                    <i class="fa-solid fa-snowflake"></i>
+                    <div>
+                      <span class="spec-label">Validade</span>
+                      <span class="spec-val">3 a 5 dias</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="back-content-list">
+                  <div class="back-detail-item">
+                    <i class="fa-solid fa-sparkles"></i>
+                    <span><strong>Massa:</strong> Fubá moinho d’água artesanal com toque de queijo curado ralado na hora.</span>
+                  </div>
+                  <div class="back-detail-item">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span><strong>Goiabada:</strong> Autêntica cascão mineira em calda quente e encorpada.</span>
+                  </div>
+                  <div class="back-detail-item">
+                    <i class="fa-solid fa-seedling"></i>
+                    <span><strong>Aroma:</strong> Leve perfume nostálgico de erva-doce selecionada.</span>
+                  </div>
+                  <div class="back-secret-note">
+                    <i class="fa-solid fa-heart"></i>
+                    <span><strong>Dica da Ju:</strong> O bolo que perfuma a vizinhança assim que sai do forno. Sirva morninho!</span>
+                  </div>
+                </div>
+
+                <div class="back-order-actions">
+                  <a href="https://wa.me/5521972558199?text=Ol%C3%A1!%20Quero%20encomendar%20o%20Bolo%20de%20Fub%C3%A1%20Cremoso%20com%20Goiabada!" target="_blank" class="btn-back-order-wa">
+                    <i class="fa-brands fa-whatsapp"></i> Peça pelo WhatsApp
+                  </a>
+                  <a href="https://www.ifood.com.br/delivery/rio-de-janeiro-rj/juliana-passos-bolo-caseiro-santissimo/9c33698d-069c-4eba-8e46-34d284d932b2" target="_blank" class="btn-back-order-ifood">
+                    <i class="fa-solid fa-utensils"></i> Peça no iFood
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Botão Central Inferior -->
+        <div class="menu-center-cta">
+          <button class="btn-menu-full" id="btn-open-menu-modal">
+            <i class="fa-solid fa-book-open"></i>
+            <span>Ver cardápio completo e pedir agora</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. SEÇÃO DE PROVA SOCIAL ("Quem prova, aprova")
+         ====================================================================== -->
+    <section class="section-padding reviews-section" id="avaliacoes">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Depoimentos Reais</span>
+          <h2 class="section-title">Quem prova, aprova</h2>
+          <p class="section-desc">
+            A satisfação dos nossos clientes é o ingrediente principal em cada fornada. Veja o que dizem no Google sobre nossos bolos.
+          </p>
+        </div>
+
+        <!-- Banner com a Nota Média do Google -->
+        <div class="google-rating-hero-banner">
+          <div class="google-brand-block">
+            <i class="fa-brands fa-google google-logo-icon"></i>
+            <div>
+              <div class="google-title">Google Avaliações</div>
+              <div class="google-subtitle">Empresa Verificada em Santíssimo</div>
+            </div>
+          </div>
+
+          <div class="google-score-box">
+            <span class="google-big-score">4.6</span>
+            <div class="google-stars-meta">
+              <span class="google-stars">★★★★★</span>
+              <span class="google-count">39+ avaliações de clientes</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cartões Estilizados de Depoimentos -->
+        <div class="reviews-grid">
+          
+          <!-- Depoimento 1: Bianca Gonçalves -->
+          <div class="review-card">
+            <i class="fa-solid fa-quote-right review-quote-icon"></i>
+            <div>
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="review-text">
+                "O melhor bolo de Santíssimo sem dúvidas! Pedi o bolo vulcão de ninho com morangos pro aniversário da minha mãe e todo mundo ficou impressionado com a cremosidade da calda. Super caprichado!"
+              </p>
+            </div>
+            <div class="review-user-row">
+              <div class="user-avatar avatar-1">BG</div>
+              <div class="user-details">
+                <h5>Bianca Gonçalves</h5>
+                <span><i class="fa-solid fa-circle-check"></i> Avaliação no Google</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Depoimento 2: Maria Eduarda -->
+          <div class="review-card">
+            <i class="fa-solid fa-quote-right review-quote-icon"></i>
+            <div>
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="review-text">
+                "Massa super fofinha, molhadinha e fresquinha! Dá pra sentir que é feito na hora e com muito amor. Entrega super rápida pelo iFood e o bolo chegou perfeito e quentinho."
+              </p>
+            </div>
+            <div class="review-user-row">
+              <div class="user-avatar avatar-2">ME</div>
+              <div class="user-details">
+                <h5>Maria Eduarda</h5>
+                <span><i class="fa-solid fa-circle-check"></i> Avaliação no Google</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Depoimento 3: Camila Santos -->
+          <div class="review-card">
+            <i class="fa-solid fa-quote-right review-quote-icon"></i>
+            <div>
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="review-text">
+                "Atendimento impecável pelo WhatsApp e o bolo de chocolate com calda vulcão é um espetáculo à parte. Já virou tradição dos fins de semana aqui em casa, recomendo de olhos fechados!"
+              </p>
+            </div>
+            <div class="review-user-row">
+              <div class="user-avatar avatar-3">CS</div>
+              <div class="user-details">
+                <h5>Camila Santos</h5>
+                <span><i class="fa-solid fa-circle-check"></i> Avaliação no Google</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Botão para Ver Todas as Avaliações -->
+        <div class="reviews-cta-wrap">
+          <a href="https://www.google.com/maps/place/Juliana+Passos+Bolo+Caseiro/@-22.8744722,-43.5296837,17z/data=!4m15!1m8!3m7!1s0x9be1adfcdc39af:0x16c41bec40064263!2sEstr.+do+Lameir%C3%A3o,+1447+-+Lj+D+-+Sant%C3%ADssimo,+Rio+de+Janeiro+-+RJ,+23092-031!3b1!8m2!3d-22.8744722!4d-43.5271034!16s%2Fg%2F11v44rs5d6!3m5!1s0x9be1695b0ba375:0x78b0a22354676479!8m2!3d-22.8745571!4d-43.5271192!16s%2Fg%2F11v6bkj5yf?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn-google-reviews">
+            <i class="fa-brands fa-google"></i>
+            <span>Ver todas as avaliações no Google</span>
+            <i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.8rem; margin-left:4px;"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. SEÇÃO DO INSTAGRAM ("Acompanhe no Instagram")
+         ====================================================================== -->
+    <section class="section-padding instagram-section" id="instagram">
+      <div class="container">
+        <div class="section-header">
+          <span class="instagram-handle-badge">
+            <i class="fa-brands fa-instagram"></i> @julianapassos_bolocaseiro
+          </span>
+          <h2 class="section-title">Acompanhe no Instagram</h2>
+          <p class="section-desc">
+            Bastidores, promoções e os bolos mais fofos da semana. Vem ver de pertinho!
+          </p>
+        </div>
+
+        <!-- Grade de Fotos Recentes do Feed -->
+        <div class="instagram-feed-grid">
+          
+          <!-- Post 1: Bolo de Ninho com Morango -->
+          <div class="insta-post-card" 
+               role="button"
+               tabindex="0"
+               data-post-id="ninho"
+               data-cake-title="Bolo Vulcão de Ninho com Morango"
+               data-cake-img="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80"
+               data-likes="412"
+               data-comments="38"
+               data-caption="Aquele momento mágico quando o bolo de Ninho transborda no prato... Massa amanteigada bem fofinha e brigadeiro de ninho cremoso no ponto perfeito! ✨🍓"
+               data-comment-user="@mariasilva"
+               data-comment-text="Menina do céu, esse vulcão é surreal de tão gostoso! Já virou meu favorito da vida ❤️">
+            <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=600&q=80" alt="Bolo Vulcão Ninho e Morango no Instagram" loading="lazy">
+            <div class="insta-overlay">
+              <div class="insta-stats-row">
+                <span><i class="fa-solid fa-heart"></i> 412</span>
+                <span><i class="fa-solid fa-comment"></i> 38</span>
+              </div>
+              <p class="insta-caption-snippet">Aquele momento mágico quando o bolo de Ninho transborda... ✨🍓</p>
+              <div class="insta-hover-cta">
+                <span class="insta-preview-pill"><i class="fa-solid fa-magnifying-glass-plus"></i> Ver foto e comentários</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 2: Bolo de Chocolate Belga -->
+          <div class="insta-post-card" 
+               role="button"
+               tabindex="0"
+               data-post-id="chocolate"
+               data-cake-title="Bolo Vulcão de Chocolate Belga"
+               data-cake-img="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80"
+               data-likes="589"
+               data-comments="54"
+               data-caption="Saindo do forno agora: puro cacau 100% com calda aveludada bem quente e granulados crocantes que derretem na boca! Quem aí resiste? 🍫"
+               data-comment-user="@camila_santoss"
+               data-comment-text="Chocolatudo de verdade! O cheirinho maravilhoso invade a casa. Super recomendo seguir a Ju!">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80" alt="Bolo de Chocolate Artesanal no Instagram" loading="lazy">
+            <div class="insta-overlay">
+              <div class="insta-stats-row">
+                <span><i class="fa-solid fa-heart"></i> 589</span>
+                <span><i class="fa-solid fa-comment"></i> 54</span>
+              </div>
+              <p class="insta-caption-snippet">Saindo do forno agora: puro cacau com calda aveludada quente! 🍫</p>
+              <div class="insta-hover-cta">
+                <span class="insta-preview-pill"><i class="fa-solid fa-magnifying-glass-plus"></i> Ver foto e comentários</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 3: Bolo de Churros com Doce de Leite -->
+          <div class="insta-post-card" 
+               role="button"
+               tabindex="0"
+               data-post-id="churros"
+               data-cake-title="Bolo de Churros com Doce de Leite"
+               data-cake-img="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?auto=format&fit=crop&w=800&q=80"
+               data-likes="347"
+               data-comments="29"
+               data-caption="Quem aí também não resiste a doce de leite artesanal com canela aromática? Massa fofinha de canela com uma camada generosa de doce de leite! 🍯✨"
+               data-comment-user="@patricia.doces"
+               data-comment-text="Esse bolo de churros é uma obra de arte! Para ver todos os sabores e bastidores sigam no Instagram @julianapassos_bolocaseiro 😍">
+            <img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?auto=format&fit=crop&w=600&q=80" alt="Bolo de Churros no Instagram" loading="lazy">
+            <div class="insta-overlay">
+              <div class="insta-stats-row">
+                <span><i class="fa-solid fa-heart"></i> 347</span>
+                <span><i class="fa-solid fa-comment"></i> 29</span>
+              </div>
+              <p class="insta-caption-snippet">Quem aí também não resiste a doce de leite com canela? 🍯✨</p>
+              <div class="insta-hover-cta">
+                <span class="insta-preview-pill"><i class="fa-solid fa-magnifying-glass-plus"></i> Ver foto e comentários</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Post 4: Bolo de Cenoura Caseiro -->
+          <div class="insta-post-card" 
+               role="button"
+               tabindex="0"
+               data-post-id="cenoura"
+               data-cake-title="Bolo de Cenoura com Piscina de Brigadeiro"
+               data-cake-img="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=800&q=80"
+               data-likes="620"
+               data-comments="63"
+               data-caption="Bastidores da nossa cozinha em Santíssimo! Feito com amor, massa fofinha de cenouras frescas e calda de brigadeiro de panela! ❤️"
+               data-comment-user="@eduardo_mello"
+               data-comment-text="O melhor bolo de cenoura do Rio! Vale a pena acompanhar o perfil da Juliana para ver quando saem as fornadas!">
+            <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=600&q=80" alt="Bolo Caseiro de Cenoura no Instagram" loading="lazy">
+            <div class="insta-overlay">
+              <div class="insta-stats-row">
+                <span><i class="fa-solid fa-heart"></i> 620</span>
+                <span><i class="fa-solid fa-comment"></i> 63</span>
+              </div>
+              <p class="insta-caption-snippet">Bastidores da nossa cozinha em Santíssimo! Feito com amor ❤️</p>
+              <div class="insta-hover-cta">
+                <span class="insta-preview-pill"><i class="fa-solid fa-magnifying-glass-plus"></i> Ver foto e comentários</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Banner de Convite Oficial: "Para ver mais, siga no Instagram" -->
+        <div class="instagram-invite-banner">
+          <div class="insta-invite-left">
+            <div class="insta-invite-icon">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="insta-invite-text">
+              <h4>Gostou dos nossos bolos caseiros?</h4>
+              <p>
+                Para ver mais fotos, vídeos dos bastidores, receitas e novidades da semana, <strong>siga nosso perfil oficial no Instagram!</strong>
+              </p>
+            </div>
+          </div>
+          <a href="https://www.instagram.com/julianapassos_bolocaseiro/" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn-instagram-follow">
+            <i class="fa-brands fa-instagram"></i>
+            <span>Seguir @julianapassos_bolocaseiro</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. SEÇÃO DE LOCALIZAÇÃO E CONTATO ("Vem buscar ou receba em casa")
+         ====================================================================== -->
+    <section class="section-padding location-section" id="localizacao">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Onde Nos Encontrar</span>
+          <h2 class="section-title">Vem buscar ou receba em casa</h2>
+          <p class="section-desc">
+            Nossa cozinha artesanal fica no coração de Santíssimo, Zona Oeste do Rio de Janeiro. Venha nos visitar para retirar seu bolo quentinho ou peça no conforto do seu lar!
+          </p>
+        </div>
+
+        <div class="location-grid">
+          <!-- Card de Informações e Dados -->
+          <div class="location-info-card">
+            <p class="location-lead-text">
+              Espaço acolhedor preparado com todo o carinho para produzir os bolos caseiros mais amados da região. Atendemos retirada e entregas rápidas via iFood ou WhatsApp.
+            </p>
+
+            <div class="contact-details-list">
+              <!-- Endereço -->
+              <div class="contact-item">
+                <div class="contact-icon-bubble">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="contact-text-box">
+                  <h5>Endereço da Loja</h5>
+                  <p>Est. do Lameirão, 1447 - Lj D - Santíssimo, Rio de Janeiro - RJ, 23092-031</p>
+                  <a href="https://www.google.com/maps/place/Juliana+Passos+Bolo+Caseiro/@-22.8744722,-43.5296837,17z/data=!4m15!1m8!3m7!1s0x9be1adfcdc39af:0x16c41bec40064263!2sEstr.+do+Lameir%C3%A3o,+1447+-+Lj+D+-+Sant%C3%ADssimo,+Rio+de+Janeiro+-+RJ,+23092-031!3b1!8m2!3d-22.8744722!4d-43.5271034!16s%2Fg%2F11v44rs5d6!3m5!1s0x9be1695b0ba375:0x78b0a22354676479!8m2!3d-22.8745571!4d-43.5271192!16s%2Fg%2F11v6bkj5yf?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-map-location-dot"></i> Ver no Google Maps
+                  </a>
+                </div>
+              </div>
+
+              <!-- Horário -->
+              <div class="contact-item">
+                <div class="contact-icon-bubble">
+                  <i class="fa-regular fa-clock"></i>
+                </div>
+                <div class="contact-text-box">
+                  <h5>Horário de Funcionamento</h5>
+                  <div style="margin-bottom: 6px;">
+                    <span id="live-store-status" class="open-status-badge">
+                      <span class="status-indicator-dot"></span>
+                      Aberto hoje • Fecha às 20:00
+                    </span>
+                  </div>
+                  <p>Segunda a Sábado: 09:00 às 20:00 | Domingo: 09:00 às 15:00</p>
+                </div>
+              </div>
+
+              <!-- Telefone / WhatsApp -->
+              <div class="contact-item">
+                <div class="contact-icon-bubble">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="contact-text-box">
+                  <h5>Telefone / WhatsApp</h5>
+                  <p>(21) 97255-8199</p>
+                  <a href="https://wa.me/5521972558199?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido%20ou%20tirar%20uma%20d%C3%BAvida." target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-comment-dots"></i> Chamar no WhatsApp
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Faixa de Modalidades de Atendimento -->
+            <div class="delivery-badges-strip">
+              <span class="delivery-pill"><i class="fa-solid fa-store"></i> Retirada no Balcão</span>
+              <span class="delivery-pill"><i class="fa-solid fa-motorcycle"></i> Entrega iFood</span>
+              <span class="delivery-pill"><i class="fa-solid fa-calendar-check"></i> Encomendas Agendadas</span>
+            </div>
+          </div>
+
+          <!-- Mapa Interativo do Google Maps -->
+          <div class="map-frame-wrapper">
+            <iframe 
+              src="https://maps.google.com/maps?q=Juliana+Passos+Bolo+Caseiro%2C+Est.+do+Lameir%C3%A3o%2C+1447+-+Lj+D+-+Sant%C3%ADssimo%2C+Rio+de+Janeiro+-+RJ%2C+23092-031&t=&z=17&ie=UTF8&iwloc=&output=embed"
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Localização Juliana Passos Bolo Caseiro no Google Maps">
+            </iframe>
+
+            <!-- Overlay Flutuante do Mapa -->
+            <div class="map-floating-overlay-card">
+              <div class="map-floating-info">
+                <i class="fa-solid fa-location-crosshairs"></i>
+                <div>
+                  <h6>Juliana Passos Bolo Caseiro</h6>
+                  <p>Santíssimo • Rio de Janeiro</p>
+                </div>
+              </div>
+              <a href="https://www.google.com/maps/place/Juliana+Passos+Bolo+Caseiro/@-22.8744722,-43.5296837,17z/data=!4m15!1m8!3m7!1s0x9be1adfcdc39af:0x16c41bec40064263!2sEstr.+do+Lameir%C3%A3o,+1447+-+Lj+D+-+Sant%C3%ADssimo,+Rio+de+Janeiro+-+RJ,+23092-031!3b1!8m2!3d-22.8744722!4d-43.5271034!16s%2Fg%2F11v44rs5d6!3m5!1s0x9be1695b0ba375:0x78b0a22354676479!8m2!3d-22.8745571!4d-43.5271192!16s%2Fg%2F11v6bkj5yf?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D" 
+                 target="_blank" 
+                 rel="noopener noreferrer" 
+                 class="btn-open-external-map">
+                Abrir Rota
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         7. SEÇÃO FINAL DE CONVERSÃO (CTA)
+         ====================================================================== -->
+    <section class="final-cta-section">
+      <div class="final-cta-blob blob-cta-1"></div>
+      <div class="final-cta-blob blob-cta-2"></div>
+
+      <div class="container final-cta-inner">
+        <span class="final-cta-tag">Feito com muito carinho para você</span>
+        <h2 class="final-cta-title">Vai ficar só na vontade?</h2>
+        <p class="final-cta-lead">
+          Faça seu pedido agora e surpreenda alguém (ou você mesma!) com um bolo caseiro inesquecível... Fresquinho, fofinho e com aquela calda generosa.
+        </p>
+
+        <div class="final-cta-buttons">
+          <a href="https://www.ifood.com.br/delivery/rio-de-janeiro-rj/juliana-passos-bolo-caseiro-santissimo/9c33698d-069c-4eba-8e46-34d284d932b2" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn-final-ifood">
+            <i class="fa-solid fa-motorcycle"></i>
+            <span>Peça já pelo iFood</span>
+          </a>
+
+          <a href="https://wa.me/5521972558199?text=Ol%C3%A1!%20Quero%20fazer%20meu%20pedido%20agora%20mesmo!" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn-final-whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>Chamar no WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       8. RODAPÉ INSTITUCIONAL (FOOTER)
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Coluna 1: Marca -->
+        <div class="footer-brand">
+          <h3>Juliana Passos</h3>
+          <span>Bolo Caseiro</span>
+          <p>
+            Confeitaria artesanal afetiva em Santíssimo, Rio de Janeiro. Resgatando memórias e momentos doces com receitas tradicionais de família.
+          </p>
+        </div>
+
+        <!-- Coluna 2: Navegação -->
+        <div class="footer-column">
+          <h4>Navegação</h4>
+          <ul class="footer-links-list">
+            <li><a href="#cardapio"><i class="fa-solid fa-angle-right"></i> Bolos</a></li>
+            <li><a href="#avaliacoes"><i class="fa-solid fa-angle-right"></i> Avaliações</a></li>
+            <li><a href="#instagram"><i class="fa-solid fa-angle-right"></i> Instagram</a></li>
+            <li><a href="#localizacao"><i class="fa-solid fa-angle-right"></i> Onde estamos</a></li>
+          </ul>
+        </div>
+
+        <!-- Coluna 3: Horários -->
+        <div class="footer-column">
+          <h4>Funcionamento</h4>
+          <div class="footer-hours-box">
+            <p><strong>Segunda a Sábado:</strong><br> 09:00 às 20:00</p>
+            <p><strong>Domingo:</strong><br> 09:00 às 15:00</p>
+            <p><small style="color:#f48fa2;">Entregas via iFood ou retirada no balcão.</small></p>
+          </div>
+        </div>
+
+        <!-- Coluna 4: Redes & Contato -->
+        <div class="footer-column">
+          <h4>Conecte-se</h4>
+          <p style="font-size:0.88rem; color:rgba(255,255,255,0.7); margin-bottom: 12px;">
+            Acompanhe nossas novidades e promoções diárias:
+          </p>
+          <div class="footer-social-icons">
+            <a href="https://wa.me/5521972558199" target="_blank" rel="noopener noreferrer" class="footer-social-btn" title="WhatsApp" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/julianapassos_bolocaseiro/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" title="Instagram" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.ifood.com.br/delivery/rio-de-janeiro-rj/juliana-passos-bolo-caseiro-santissimo/9c33698d-069c-4eba-8e46-34d284d932b2" target="_blank" rel="noopener noreferrer" class="footer-social-btn" title="iFood" aria-label="iFood">
+              <i class="fa-solid fa-utensils"></i>
+            </a>
+            <a href="https://www.google.com/maps/place/Juliana+Passos+Bolo+Caseiro/@-22.8744722,-43.5296837,17z/data=!4m15!1m8!3m7!1s0x9be1adfcdc39af:0x16c41bec40064263!2sEstr.+do+Lameir%C3%A3o,+1447+-+Lj+D+-+Sant%C3%ADssimo,+Rio+de+Janeiro+-+RJ,+23092-031!3b1!8m2!3d-22.8744722!4d-43.5271034!16s%2Fg%2F11v44rs5d6!3m5!1s0x9be1695b0ba375:0x78b0a22354676479!8m2!3d-22.8745571!4d-43.5271192!16s%2Fg%2F11v6bkj5yf?entry=ttu&g_ep=EgoyMDI2MTAwNy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="footer-social-btn" title="Google Maps" aria-label="Google Maps">
+              <i class="fa-solid fa-location-dot"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Barra Inferior de Direitos Autorais -->
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 Juliana Passos Bolo Caseiro. Feito com <i class="fa-solid fa-heart heart-icon"></i> e muito açúcar.
+        </div>
+        <div>
+          Santíssimo • Rio de Janeiro - RJ • (21) 97255-8199
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       BOTÕES FLUTUANTES DE CONVERSÃO RÁPIDA (iFood + WhatsApp)
+       ======================================================================== -->
+  <div class="floating-actions-dock" aria-label="Canais de Pedido Rápido">
+    <div class="floating-speech-bubble">
+      <span>Peça quentinho pelo iFood ou WhatsApp! 🍰</span>
+    </div>
+
+    <div class="floating-buttons-stack">
+      <!-- Botão Flutuante iFood -->
+      <a href="https://www.ifood.com.br/delivery/rio-de-janeiro-rj/juliana-passos-bolo-caseiro-santissimo/9c33698d-069c-4eba-8e46-34d284d932b2" 
+         target="_blank" 
+         rel="noopener noreferrer" 
+         class="floating-action-btn floating-ifood-btn" 
+         aria-label="Pedir no iFood"
+         title="Pedir no iFood">
+        <i class="fa-solid fa-utensils"></i>
+        <span class="floating-btn-tooltip">Pedir no iFood</span>
+      </a>
+
+      <!-- Botão Flutuante WhatsApp -->
+      <a href="https://wa.me/5521972558199?text=Ol%C3%A1%2C%20Juliana!%20Vim%20pelo%20site%20e%20gostaria%20de%20pedir%20um%20bolo%20caseiro." 
+         target="_blank" 
+         rel="noopener noreferrer" 
+         class="floating-action-btn floating-whatsapp-btn" 
+         aria-label="Falar com a Confeitaria no WhatsApp"
+         title="Chamar no WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="floating-whatsapp-badge"></span>
+        <span class="floating-btn-tooltip">Chamar no WhatsApp</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL DE CARDÁPIO COMPLETO
+       ======================================================================== -->
+  <div class="modal-overlay" id="full-menu-modal" role="dialog" aria-modal="true" aria-labelledby="modal-menu-title">
+    <div class="modal-window">
+      <button class="modal-close-btn" id="btn-close-modal" aria-label="Fechar Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-header">
+        <span class="section-tag">Cardápio Oficial</span>
+        <h3 class="modal-title" id="modal-menu-title">Sabores Disponíveis Hoje</h3>
+        <p class="modal-desc">Escolha seu sabor favorito e peça direto pelo WhatsApp ou iFood:</p>
+      </div>
+
+      <div class="modal-items-list">
+        <!-- Item 1 -->
+        <div class="modal-item-row">
+          <div class="modal-item-info">
+            <h5>Bolo Vulcão de Ninho com Morango</h5>
+            <p>Massa amanteigada + calda farta de Leite Ninho + morangos frescos</p>
+          </div>
+          <div class="modal-item-action">
+            <span class="modal-item-price">R$ 55,00</span>
+            <a href="https://wa.me/5521972558199?text=Ol%C3%A1!%20Quero%20pedir%20o%20Bolo%20Vulc%C3%A3o%20de%20Ninho%20com%20Morango." target="_blank" class="btn-modal-order">
+              Pedir
+            </a>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="modal-item-row">
+          <div class="modal-item-info">
+            <h5>Bolo Vulcão de Chocolate Belga</h5>
+            <p>Massa de cacau 100% + brigadeiro cremoso gourmet + granulados</p>
+          </div>
+          <div class="modal-item-action">
+            <span class="modal-item-price">R$ 52,00</span>
+            <a href="https://wa.me/5521972558199?text=Ol%C3%A1!%20Quero%20pedir%20o%20Bolo%20Vulc%C3%A3o%20de%20Chocolate%20Belga." target="_blank" class="btn-modal-order">
+              Pedir
+            </a>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="modal-item-row">
+          <div class="modal-item-info">
+            <h5>Cenoura com Brigadeiro Vulcão</h5>
+            <p>Receita clássica com cenouras frescas e piscina de brigadeiro</p>
+          </div>
+          <div class="modal-item-action">
+            <span class="modal-item-price">R$ 48,00</span>
+            <a href="https://wa.me/5521972558199?text=Ol%C3%A1!%20Quero%20pedir%20o%20Bolo%20de%20Cenoura%20com%20Brigadeiro." target="_blank" class="btn-modal-order">
+              Pedir
+            </a>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="modal-item-row">
+          <div class="modal-item-info">
+            <h5>Bolo de Churros com Doce de Leite</h5>
+            <p>Massa perfumada de canela com doce de leite artesanal cremoso</p>
+          </div>
+          <div class="modal-item-action">
+            <span class="modal-item-price">R$ 50,00</span>
+            <a href="https://wa.me/5521972558199?text=Ol%C3%A1!%20Quero%20pedir%20o%20Bolo%20de%20Churros." target="_blank" class="btn-modal-order">
+              Pedir
+            </a>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="modal-item-row">
+          <div class="modal-item-info">
+            <h5>Red Velvet com Cream Cheese e Frutas</h5>
+            <p>Massa rubi com autêntico frosting de cream cheese e geleia</p>
+          </div>
+          <div class="modal-item-action">
+            <span class="modal-item-price">R$ 68,00</span>
+            <a href="https://wa.me/5521972558199?text=Ol%C3%A1!%20Quero%20pedir%20o%20Bolo%20Red%20Velvet." target="_blank" class="btn-modal-order">
+              Pedir
+            </a>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="modal-item-row">
+          <div class="modal-item-info">
+            <h5>Fubá Cremoso com Goiabada Cascão</h5>
+            <p>Massa com queijo minas curado e calda quente de goiabada</p>
+          </div>
+          <div class="modal-item-action">
+            <span class="modal-item-price">R$ 42,00</span>
+            <a href="https://wa.me/5521972558199?text=Ol%C3%A1!%20Quero%20pedir%20o%20Bolo%20de%20Fub%C3%A1%20Cremoso." target="_blank" class="btn-modal-order">
+              Pedir
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center;">
+        <a href="https://wa.me/5521972558199?text=Ol%C3%A1%2C%20Juliana!%20Gostaria%20de%20consultar%20outros%20sabores%20personalizados%20para%20encomenda." target="_blank" class="btn-cta-whatsapp" style="width: 100%; justify-content: center;">
+          <i class="fa-brands fa-whatsapp"></i> Personalizar pedido com a confeiteira
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       MODAL DE PRÉ-VISUALIZAÇÃO DE POST DO INSTAGRAM (FEED ARTESANAL)
+       ======================================================================== -->
+  <div class="modal-overlay" id="insta-post-modal" role="dialog" aria-modal="true" aria-labelledby="insta-modal-user">
+    <div class="modal-window insta-modal-window">
+      <button class="modal-close-btn" id="btn-close-insta-modal" aria-label="Fechar Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <!-- Cabeçalho do Post estilo Instagram -->
+      <div class="insta-modal-header">
+        <div class="insta-modal-user-block">
+          <div class="insta-modal-avatar-ring">
+            <div class="insta-modal-avatar">
+              <i class="fa-solid fa-cake-candles"></i>
+            </div>
+          </div>
+          <div>
+            <div class="insta-modal-username-row">
+              <span class="insta-modal-username" id="insta-modal-user">julianapassos_bolocaseiro</span>
+              <span class="insta-verified-badge"><i class="fa-solid fa-circle-check"></i></span>
+              <span class="insta-modal-dot">•</span>
+              <a href="https://www.instagram.com/julianapassos_bolocaseiro/" target="_blank" rel="noopener noreferrer" class="insta-modal-top-follow">Seguir</a>
+            </div>
+            <span class="insta-modal-location">Santíssimo, Rio de Janeiro</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagem do Bolo em Alta Definição -->
+      <div class="insta-modal-image-box">
+        <img id="insta-modal-img" src="" alt="Foto do bolo caseiro" loading="lazy">
+      </div>
+
+      <!-- Ações de Interação (Curtir, Comentar, Salvar) -->
+      <div class="insta-modal-actions-bar">
+        <div class="insta-modal-actions-left">
+          <button class="insta-action-btn like-btn" id="insta-modal-like-btn" aria-label="Curtir">
+            <i class="fa-regular fa-heart"></i>
+          </button>
+          <button class="insta-action-btn" aria-label="Comentar">
+            <i class="fa-regular fa-comment"></i>
+          </button>
+          <button class="insta-action-btn" aria-label="Compartilhar">
+            <i class="fa-regular fa-paper-plane"></i>
+          </button>
+        </div>
+        <button class="insta-action-btn" aria-label="Salvar">
+          <i class="fa-regular fa-bookmark"></i>
+        </button>
+      </div>
+
+      <!-- Contador de Curtidas -->
+      <div class="insta-modal-likes-row">
+        <span id="insta-modal-likes-count">412 curtidas</span>
+      </div>
+
+      <!-- Conteúdo da Legenda e Comentários -->
+      <div class="insta-modal-comments-scroll">
+        <!-- Legenda Original -->
+        <div class="insta-comment-item">
+          <strong>julianapassos_bolocaseiro</strong>
+          <span id="insta-modal-caption"></span>
+        </div>
+
+        <!-- Comentário de Cliente -->
+        <div class="insta-comment-item client-comment">
+          <strong id="insta-modal-comment-user">@mariasilva</strong>
+          <span id="insta-modal-comment-text"></span>
+        </div>
+      </div>
+
+      <!-- Caixa Especial de Convite (Para ver mais siga no Instagram) -->
+      <div class="insta-modal-invite-box">
+        <div class="insta-invite-box-icon">
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="insta-invite-box-content">
+          <h5>Quer acompanhar mais fotos e novidades?</h5>
+          <p>Siga nosso perfil oficial <strong>@julianapassos_bolocaseiro</strong> no Instagram para ver os bastidores e o cardápio do dia!</p>
+        </div>
+      </div>
+
+      <!-- Botões de Ação Final (Seguir ou Pedir no WhatsApp) -->
+      <div class="insta-modal-footer-btns">
+        <a href="https://www.instagram.com/julianapassos_bolocaseiro/" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn-modal-insta-follow">
+          <i class="fa-brands fa-instagram"></i>
+          <span>Seguir no Instagram</span>
+        </a>
+        <a href="#" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           id="insta-modal-wa-btn" 
+           class="btn-modal-insta-order">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>Pedir esse bolo no WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script Principal -->
+  <script src="js/main.js"></script>
+</body>
+</html>
